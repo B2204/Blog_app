@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>All Blog Posts</h2>
+
+{% for post in posts %}
+
+<h3>
+
+<a href="/post/{{ post.id }}/">
+
+{{ post.title }}
+
+</a>
+
+</h3>
+
+<p>
+
+{{ post.content|truncatewords:20 }}
+
+</p>
+
+<hr>
+
+{% empty %}
+
+<p>No Posts Available.</p>
+
+{% endfor %}
+
+{% endblock %}
