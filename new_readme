@@ -1,0 +1,89 @@
+# 🚀 Django Blog REST API
+
+A production-style Blog REST API built using Django REST Framework with JWT Authentication, PostgreSQL, Redis, Celery, Docker, and Pytest.
+
+---
+
+## Features
+
+- RESTful CRUD API
+- JWT Authentication
+- PostgreSQL Database
+- Redis Caching
+- Celery Background Tasks
+- Docker & Docker Compose
+- Pytest Test Suite
+- Factory Boy Test Data
+- Query Optimization
+- Database Indexing
+
+---
+
+## Tech Stack
+
+- Python 3.12+
+- Django 6
+- Django REST Framework
+- PostgreSQL
+- Redis
+- Celery
+- Docker
+- Docker Compose
+- Pytest
+- Factory Boy
+
+---
+
+## Project Structure
+
+blog_project/
+│
+├── blog/
+├── blog_project/
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── pytest.ini
+└── README.md
+
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | /api/posts/ | List Posts |
+| POST | /api/posts/ | Create Post |
+| GET | /api/posts/{id}/ | Retrieve Post |
+| PUT | /api/posts/{id}/ | Update Post |
+| DELETE | /api/posts/{id}/ | Delete Post |
+| POST | /api/token/ | JWT Login |
+| POST | /api/token/refresh/ | Refresh Token |
+
+---
+
+## Performance Optimizations
+
+- select_related()
+- prefetch_related()
+- Database Indexes
+- Redis Caching
+
+---
+
+## Background Tasks
+
+- Celery
+- Redis Broker
+- Async Email Tasks
+
+---
+
+## Testing
+
+pytest
+pytest-django
+Factory Boy
+APIClient
+
+All tests passing.
